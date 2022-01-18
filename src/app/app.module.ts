@@ -8,6 +8,8 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DivisionComponent } from './division/division.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,15 @@ import { DivisionComponent } from './division/division.component';
     HeaderComponent,
     AppMenuComponent,
     AppFooterComponent,
+    DivisionComponent,
     DashboardComponent,
-    DivisionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
