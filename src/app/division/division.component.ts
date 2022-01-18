@@ -1,4 +1,3 @@
-import { ConditionalExpr } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Division } from '../model/division.model';
 import { DivisionService } from '../services/division.service';
